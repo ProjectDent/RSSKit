@@ -29,30 +29,9 @@
 
 - (id) init {
 	self = [super init];
-	NSMutableArray *theArticles = [[NSMutableArray alloc] init];
-	self.articles = theArticles;
-	[theArticles release];
-	NSMutableArray *theCategories = [[NSMutableArray alloc] init];
-	self.categories = theCategories;
-	[theCategories release];
+	self.articles = [[NSMutableArray alloc] init];
+	self.categories = [[NSMutableArray alloc] init];
 	return self;
-}
-
-- (void) dealloc {
-	self.title = NULL;
-	self.description = NULL;
-	self.url = NULL;
-	self.date = NULL;
-	self.author = NULL;
-	self.articles = NULL;
-	self.uid = NULL;
-	self.language = NULL;
-	self.copyright = NULL;
-	self.categories = NULL;
-	self.generator = NULL;
-	self.iconUrl = NULL;
-	self.cloudService = NULL;
-	[super dealloc];
 }
 
 @end

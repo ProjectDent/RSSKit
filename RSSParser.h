@@ -21,10 +21,9 @@
 	NSMutableString *tagPath;
 	RSSFeed *feed;
 	RSSEntry *entry;
-	id <RSSParserDelegate> delegate;
 }
 
-@property (nonatomic, assign) id <RSSParserDelegate> delegate;
+@property (nonatomic, weak) id <RSSParserDelegate> delegate;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, assign) BOOL synchronous;
 

@@ -15,11 +15,5 @@
 @synthesize length;
 @synthesize type;
 
-- (void) dealloc {
-	self.url = NULL;
-	self.type = NULL;
-	[super dealloc];
-}
-
 @end
 
